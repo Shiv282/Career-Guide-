@@ -55,7 +55,7 @@ export default function Home() {
       },
     });
     console.log(vakResponse.data);
-    localStorage.setItem('vakPredictedData',vakResponse.data);
+    localStorage.setItem('vakPredictedData',JSON.stringify(vakResponse.data));
 
     
 let data = JSON.stringify({
